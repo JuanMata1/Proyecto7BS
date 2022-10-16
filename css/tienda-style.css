@@ -1,0 +1,75 @@
+
+.juego {
+
+    border-radius: 20px;
+    background-color: rgb(253, 229, 201);
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    margin-top: 150px;
+    height: 15rem;
+    width: 20rem;
+
+}
+
+.juegos {
+    padding-left: 10%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 2rem 5rem;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .juegos {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0.1rem 1rem;
+       
+    }
+    .juego {
+        height: 10rem;
+        width: 10rem;
+    
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) {
+    .juegos {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem 2rem;
+    }
+    .juego {
+        padding-left: 0;
+        height: 20rem ;
+        width: 12rem;
+    
+    }
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .juegos {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem 5rem;
+    }
+    .juego {
+        padding-left: 0;
+        height: 10rem;
+        width: 11rem;
+    
+    }
+
+}
+
+
+
+
+footer {
+    background: rgb(255, 218, 218);
+    padding: 1rem;
+    margin-top: 1rem;
+}
