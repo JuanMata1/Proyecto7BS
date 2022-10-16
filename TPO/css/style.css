@@ -13,7 +13,7 @@ html{
 header{
     display: flex;
     flex-direction: row;
-    background-color:red ;
+    background-color:lightslategray ;
     justify-content:space-between;
     box-shadow: 0.5em 0.5em 0.5em 0.5em;
 }
