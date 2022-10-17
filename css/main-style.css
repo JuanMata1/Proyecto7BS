@@ -1,5 +1,3 @@
-
-
 main{
     height: 100%;
     width: 100%;
@@ -36,18 +34,24 @@ article{
 }
 
 form{
+    background-color: antiquewhite;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
-    padding: 1em;
+    width: 30%;
+    margin: 5% 25% 0% 50%;
+    padding: 3em 0 3em 3em;
+    justify-content: center;
 }
 
 form input{
-    padding: 1em;
-    margin-top: 2em;
-    margin-left: 1em;
+    padding: 1.5em;
+    margin-top: 1.5em 0 1.5em 1.5em;
+   /* margin-left: 1em;*/
     margin-bottom: 2em;
-    width: 70%;
+    width: 80%;
     border-bottom: 0.20em red solid ;
+    justify-content: center;
 }
 
 article h4{
@@ -58,8 +62,10 @@ article h4{
 
  input[type="submit"]{
     border: red solid 0.20em;
-    margin-left: 3em;
-    margin-top: 4em;
+    width: 50%;
+     margin-left: 3em;
+    margin-top: 4em; 
+    justify-content: center;
 }
 
 #flex2{
@@ -76,9 +82,10 @@ article h4{
 #box1{
    background-color: rgb(71, 22, 218);
    border: 0.50 aqua solid ;
-   margin-top: 3em;
+   margin-top: 20em;
    height: 18em;
    width: 30em;
+   justify-content: center;
 }
 
 #box2{
@@ -91,5 +98,3 @@ footer{
     background-color: #1620d6;
     text-align: center;
 }
-
-   /* PRIMER PAG */
