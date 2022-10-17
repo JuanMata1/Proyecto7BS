@@ -21,7 +21,7 @@ header {
     height: 9vh;
     display: flex;
     flex-direction: row;
-    background-color: lightslategray;
+    background-color: red;
     justify-content: space-between;
     box-shadow: 0.5em 0.5em 0.5em 0.5em;
 }
