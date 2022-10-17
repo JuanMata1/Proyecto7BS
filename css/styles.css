@@ -64,16 +64,17 @@ header img {
 }
 
 
+
 main {
     height: 100%;
     width: 100%;
 }
 
-label {
+.label {
     display: none;
 }
 
-input {
+.input {
     display: none;
 }
 
@@ -90,7 +91,7 @@ input {
         display: block;
     }
 
-    label {
+    .label {
         box-sizing: border-box;
         display: inline-block;
         border: 1px solid black;
