@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,54 +8,12 @@
   <link rel="stylesheet" href="../css/styles.css">
   <title>Document</title>
 </head>
-<style>
-  label {
-    display: none;
-  }
-
-  input {
-    display: none;
-  }
-
-  ul {
-    display: none;
-  }
-
-  @media only screen and (max-width: 600px) {
-
-    input:checked~ul {
-      display: block;
-    }
-
-    label {
-      box-sizing: border-box;
-      display: inline-block;
-      border: 1px solid black;
-      border-radius: 5px;
-      width: 30px;
-      height: 30px;
-      line-height: 30px;
-      font-weight: bold;
-      text-align: center;
-      user-select: none;
-    }
-
-    li {
-      display: block;
-      background: lightgrey;
-      margin: 0;
-      padding: 10px;
-      list-style: none;
-      border-bottom: 1px solid grey;
-    }
-  }
-</style>
 <body>
   <header>
     <div><a href="Tienda.html"><img src="../img/logo.png" alt="logo"></a><br></div>
     <nav>
-      <input type="checkbox" id="menu">
-      <label for="menu"> ☰ </label>
+      <input class="input" type="checkbox" id="menu">
+      <label class="label" for="menu"> ☰ </label>
       <ul>
         <li><a href="tienda.html">Tienda</a></li>
         <li><a href="plataformas.html">Plataformas</a></li>
