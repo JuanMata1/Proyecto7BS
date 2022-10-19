@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Api</title>
+    <style>
+        #contenido {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        img {
+
+            border-radius: 200px;
+        }
+
+        .w3-animate-fading {
+            animation-duration: 7000ms;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="w3-animate-fading" id="contenido"></div>
+
+    <script>
+        var contenido = document.querySelector('#contenido');
+
+        function traer() {
+
+            fetch('https://randomuser.me/api/')
+                .then(res => res.json())
+                .then(data => {
+                    contenido.innerHTML =
+                        `
+                        <img src="${data.results[0].picture.large}" width="160px" class="img-fluid rounded-circle">
+                        <p><b> ${data.results[0].login.username}</b></p>
+                        <i>Recomienda esta tienda</i>
+                        `
+                })
+
+        }
+        setInterval(traer, 6900)
+    </script>
+
+</body>
+
+</html>
